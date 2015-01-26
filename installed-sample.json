@@ -1,0 +1,317 @@
+[
+  {
+    "dependencies": {},
+    "name": "read-installed",
+    "description": "Read all the installed packages in a folder, and return a tree structure with all the data.",
+    "version": "3.1.5",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/read-installed"
+    },
+    "main": "read-installed.js",
+    "scripts": {
+      "test": "tap ./test/*.js"
+    },
+    "optionalDependencies": {
+      "graceful-fs": "2 || 3"
+    },
+    "author": {
+      "name": "Isaac Z. Schlueter",
+      "email": "i@izs.me",
+      "url": "http://blog.izs.me/"
+    },
+    "license": "ISC",
+    "devDependencies": {
+      "mkdirp": "^0.5.0",
+      "rimraf": "^2.2.8",
+      "tap": "~0.4.8"
+    },
+    "gitHead": "577c3f3f4f1e435f9bd944b8f99ce3f7552709ef",
+    "bugs": {
+      "url": "https://github.com/isaacs/read-installed/issues"
+    },
+    "homepage": "https://github.com/isaacs/read-installed",
+    "_id": "read-installed@3.1.5",
+    "_shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
+    "_from": "read-installed@*",
+    "_npmVersion": "2.1.15",
+    "_nodeVersion": "0.10.34",
+    "_npmUser": {
+      "name": "othiym23",
+      "email": "ogd@aoaioxxysz.net"
+    },
+    "maintainers": [
+      {
+        "name": "isaacs",
+        "email": "i@izs.me"
+      },
+      {
+        "name": "othiym23",
+        "email": "ogd@aoaioxxysz.net"
+      }
+    ],
+    "dist": {
+      "shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
+      "tarball": "http://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz"
+    },
+    "directories": {},
+    "_resolved": "https://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz",
+    "readme": "ERROR: No README data found!",
+    "realName": "read-installed",
+    "extraneous": false,
+    "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+    "parent": {
+      "name": "installed",
+      "version": "1.0.0",
+      "description": "Read all the installed packages in a folder, and produce an Array of all the data.",
+      "main": "installed.js",
+      "scripts": {
+        "test": "make test",
+        "prepublish": "make prepublish"
+      },
+      "keywords": [
+        "read-installed",
+        "package",
+        "npm",
+        "installed"
+      ],
+      "author": {
+        "name": "Tim Oxley",
+        "email": "secoif@gmail.com"
+      },
+      "license": "MIT",
+      "devDependencies": {
+        "6to5": "^2.13.7",
+        "json-stringify-safe": "^5.0.0"
+      },
+      "dependencies": {
+        "read-installed": {
+          "name": "read-installed",
+          "description": "Read all the installed packages in a folder, and return a tree structure with all the data.",
+          "version": "3.1.5",
+          "repository": "[Circular ~.0.repository]",
+          "main": "read-installed.js",
+          "scripts": "[Circular ~.0.scripts]",
+          "dependencies": "[Circular ~.0.dependencies]",
+          "optionalDependencies": "[Circular ~.0.optionalDependencies]",
+          "author": "[Circular ~.0.author]",
+          "license": "ISC",
+          "devDependencies": "[Circular ~.0.devDependencies]",
+          "gitHead": "577c3f3f4f1e435f9bd944b8f99ce3f7552709ef",
+          "bugs": "[Circular ~.0.bugs]",
+          "homepage": "https://github.com/isaacs/read-installed",
+          "_id": "read-installed@3.1.5",
+          "_shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
+          "_from": "read-installed@*",
+          "_npmVersion": "2.1.15",
+          "_nodeVersion": "0.10.34",
+          "_npmUser": "[Circular ~.0._npmUser]",
+          "maintainers": "[Circular ~.0.maintainers]",
+          "dist": "[Circular ~.0.dist]",
+          "directories": "[Circular ~.0.directories]",
+          "_resolved": "https://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "read-installed",
+          "_dependencies": {
+            "debuglog": "^1.0.1",
+            "read-package-json": "1",
+            "readdir-scoped-modules": "^1.0.0",
+            "semver": "2 || 3 || 4",
+            "slide": "~1.1.3",
+            "util-extend": "^1.0.1",
+            "graceful-fs": "2 || 3"
+          },
+          "extraneous": false,
+          "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "6to5": {
+          "name": "6to5",
+          "description": "Turn ES6 code into readable vanilla ES5 with source maps",
+          "version": "2.13.7",
+          "author": {
+            "name": "Sebastian McKenzie",
+            "email": "sebmck@gmail.com"
+          },
+          "homepage": "https://6to5.org/",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/6to5/6to5"
+          },
+          "preferGlobal": true,
+          "main": "lib/6to5/index.js",
+          "bin": {
+            "6to5": "./bin/6to5/index.js",
+            "6to5-node": "./bin/6to5-node",
+            "6to5-runtime": "./bin/6to5-runtime"
+          },
+          "browser": {
+            "./lib/6to5/index.js": "./lib/6to5/browser.js",
+            "./lib/6to5/register.js": "./lib/6to5/register-browser.js"
+          },
+          "keywords": [
+            "harmony",
+            "classes",
+            "modules",
+            "let",
+            "const",
+            "var",
+            "es6",
+            "transpile",
+            "transpiler",
+            "6to5"
+          ],
+          "scripts": {
+            "bench": "make bench",
+            "test": "make test"
+          },
+          "dependencies": {},
+          "devDependencies": {
+            "browserify": "8.1.1",
+            "chai": "1.10.0",
+            "istanbul": "0.3.5",
+            "jshint-stylish": "1.0.0",
+            "matcha": "0.6.0",
+            "mocha": "2.1.0",
+            "rimraf": "2.2.8",
+            "uglify-js": "2.4.16"
+          },
+          "optionalDependencies": {
+            "kexec": "1.1.0"
+          },
+          "gitHead": "66e9df6b0b4adecd97a73b911e5a94539058a188",
+          "bugs": {
+            "url": "https://github.com/6to5/6to5/issues"
+          },
+          "_id": "6to5@2.13.7",
+          "_shasum": "ef4053cd96216f51e37fb4d03bbac5cc73296db2",
+          "_from": "6to5@*",
+          "_npmVersion": "1.4.28",
+          "_npmUser": {
+            "name": "sebmck",
+            "email": "sebmck@gmail.com"
+          },
+          "maintainers": [
+            {
+              "name": "sebmck",
+              "email": "sebmck@gmail.com"
+            }
+          ],
+          "dist": {
+            "shasum": "ef4053cd96216f51e37fb4d03bbac5cc73296db2",
+            "tarball": "http://registry.npmjs.org/6to5/-/6to5-2.13.7.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/6to5/-/6to5-2.13.7.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "6to5",
+          "_dependencies": {
+            "acorn-6to5": "0.11.1-18",
+            "ast-types": "~0.6.1",
+            "chokidar": "0.12.6",
+            "commander": "2.6.0",
+            "core-js": "0.4.5",
+            "estraverse": "1.9.1",
+            "esutils": "1.1.6",
+            "esvalid": "1.1.0",
+            "fs-readdir-recursive": "0.1.0",
+            "jshint": "2.5.11",
+            "lodash": "2.4.1",
+            "output-file-sync": "^1.1.0",
+            "private": "0.1.6",
+            "regenerator": "0.8.9",
+            "regexpu": "1.0.0",
+            "roadrunner": "1.0.4",
+            "source-map": "0.1.43",
+            "source-map-support": "0.2.9",
+            "kexec": "1.1.0"
+          },
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/6to5",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/6to5",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "json-stringify-safe": {
+          "name": "json-stringify-safe",
+          "version": "5.0.0",
+          "description": "Like JSON.stringify, but doesn't blow up on circular refs",
+          "main": "stringify.js",
+          "scripts": {
+            "test": "node test.js"
+          },
+          "repository": {
+            "type": "git",
+            "url": "git://github.com/isaacs/json-stringify-safe"
+          },
+          "keywords": [
+            "json",
+            "stringify",
+            "circular",
+            "safe"
+          ],
+          "author": {
+            "name": "Isaac Z. Schlueter",
+            "email": "i@izs.me",
+            "url": "http://blog.izs.me"
+          },
+          "license": "BSD",
+          "bugs": {
+            "url": "https://github.com/isaacs/json-stringify-safe/issues"
+          },
+          "_id": "json-stringify-safe@5.0.0",
+          "dist": {
+            "shasum": "4c1f228b5050837eba9d21f50c2e6e320624566e",
+            "tarball": "http://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz"
+          },
+          "_from": "json-stringify-safe@*",
+          "_npmVersion": "1.3.6",
+          "_npmUser": {
+            "name": "isaacs",
+            "email": "i@izs.me"
+          },
+          "maintainers": [
+            {
+              "name": "isaacs",
+              "email": "i@izs.me"
+            }
+          ],
+          "directories": {},
+          "_shasum": "4c1f228b5050837eba9d21f50c2e6e320624566e",
+          "_resolved": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz",
+          "readme": "ERROR: No README data found!",
+          "homepage": "https://github.com/isaacs/json-stringify-safe",
+          "realName": "json-stringify-safe",
+          "dependencies": {},
+          "_dependencies": {},
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        }
+      },
+      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\n### Why\n\nArrays are a *far* easier to process and reason about than nested objects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 1.2.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`1.2.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
+      "readmeFilename": "Readme.md",
+      "_id": "installed@1.0.0",
+      "realName": "installed",
+      "_dependencies": {
+        "read-installed": "^3.1.5"
+      },
+      "extraneous": false,
+      "path": "/Users/timoxley/Projects/installed",
+      "realPath": "/Users/timoxley/Projects/installed",
+      "depth": 0,
+      "peerDependencies": {},
+      "root": true
+    },
+    "depth": 1,
+    "peerDependencies": "[Circular ~.0.parent.dependencies.read-installed.peerDependencies]"
+  }
+]
