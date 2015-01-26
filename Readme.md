@@ -78,10 +78,10 @@ installed(process.cwd(), {depth: 0}, function(err, pkgs) {
 
 * [pkgrep](http://github.com/timoxley/pkgrep)
 
-#### Note about versions < 1.2.0
+#### Note about versions < 2.0.0
 
 [pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <
-`1.2.0` are actually deprecated versions of `pkgrep`.
+`2.0.0` are actually deprecated versions of `pkgrep`.
 
 # License
 
