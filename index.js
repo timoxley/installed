@@ -46,6 +46,7 @@ function getDependencies(mod, result, visited, depth) {
     visited[dep.realPath] = true
     var obj = assign({dependencies: dep._dependencies}, dep)
     delete obj._dependencies
+    if (obj.parent === obj) delete obj.parent
     result.push(assign({}, obj))
     getDependencies(dep, result, visited, depth + 1)
   })

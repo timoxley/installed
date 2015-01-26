@@ -8,7 +8,7 @@ var DEFAULT_OPTIONS = Object.freeze({
 
 var readInstalled = require("read-installed");
 
-module.exports = function (dirname, options, fn) {
+module.exports = function installed(dirname, options, fn) {
   if (!dirname) throw new Error("dirname required");
   // options is optional
   if (typeof options === "function") {
@@ -18,9 +18,7 @@ module.exports = function (dirname, options, fn) {
   if (typeof fn !== "function") throw new Error("fn required");
   return read(dirname, options, fn);
 };
-function inspect(item) {
-  console.log(require("util").inspect(item, { colors: true, depth: 30 }));
-}
+
 function read(dirname, options, fn) {
   var options = arguments[1] === undefined ? DEFAULT_OPTIONS : arguments[1];
   return (function () {
@@ -55,6 +53,7 @@ function getDependencies(mod, result, visited, depth) {
     visited[dep.realPath] = true;
     var obj = assign({ dependencies: dep._dependencies }, dep);
     delete obj._dependencies;
+    if (obj.parent === obj) delete obj.parent;
     result.push(assign({}, obj));
     getDependencies(dep, result, visited, depth + 1);
   });
