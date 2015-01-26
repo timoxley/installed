@@ -5,8 +5,6 @@ Read all the installed packages in a folder, and produce an Array of all the dat
 A wrapper around npm's [read-installed](https://github.com/npm/read-installed) that
 produces a flat array rather than a nested tree structure. Also adds a few bells and whistles.
 
-### Why
-
 Arrays are a *far* easier to process and reason about than nested objects.
 
 ## Installation
@@ -36,6 +34,26 @@ installed(process.cwd(), options, function(err, pkgs) {
 
   console.log(pkgVersions.join('\n'))
 })
+```
+
+## CLI
+
+```
+> installed --help
+Get a JSON dump of installed package data.
+
+Usage: installed [options]
+
+Options:
+  --dev            Include development dependencies.
+  --extraneous     Show extraneous dependencies                                                                   [default: true]
+  --no-extraneous  Filter extraneous dependencies. This will include --dev dependencies if --dev is not enabled.
+  --depth          Traversal depth. use --depth=Infinity or --depth=-1 to traverse entire dependency tree.        [default: 0]
+  --color          Display coloured output. Auto-disabled if output is not a terminal.                            [default: true]
+  --no-color       Don't display coloured output, strictly JSON.
+  --json           Produce JSON output. Implies --no-color.
+  --help           Show help
+  --version        Show version number
 ```
 
 ## Data Structure Sample
