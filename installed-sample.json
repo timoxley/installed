@@ -63,9 +63,12 @@
     "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
     "parent": {
       "name": "installed",
-      "version": "1.0.0",
+      "version": "2.0.1",
       "description": "Read all the installed packages in a folder, and produce an Array of all the data.",
       "main": "installed.js",
+      "bin": {
+        "installed": "bin/index.js"
+      },
       "scripts": {
         "test": "make test",
         "prepublish": "make prepublish"
@@ -125,6 +128,94 @@
           "extraneous": false,
           "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
           "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "yargs": {
+          "name": "yargs",
+          "version": "1.3.3",
+          "description": "Light-weight option parsing with an argv hash. No optstrings attached.",
+          "main": "./index.js",
+          "dependencies": {},
+          "devDependencies": {
+            "hashish": "*",
+            "mocha": "*",
+            "chai": "*"
+          },
+          "scripts": {
+            "test": "mocha -R nyan"
+          },
+          "repository": {
+            "type": "git",
+            "url": "http://github.com/chevex/yargs.git"
+          },
+          "keywords": [
+            "argument",
+            "args",
+            "option",
+            "parser",
+            "parsing",
+            "cli",
+            "command"
+          ],
+          "author": {
+            "name": "Alex Ford",
+            "email": "Alex.Ford@CodeTunnel.com",
+            "url": "http://CodeTunnel.com"
+          },
+          "contributors": [
+            {
+              "name": "Chris Needham",
+              "email": "chris@chrisneedham.com",
+              "url": "http://chrisneedham.com"
+            },
+            {
+              "name": "James Nylen",
+              "email": "jnylen@gmail.com",
+              "url": "https://github.com/nylen"
+            },
+            {
+              "name": "Benjamin Horsleben",
+              "url": "https://github.com/fizker"
+            }
+          ],
+          "license": "MIT/X11",
+          "engine": {
+            "node": ">=0.4"
+          },
+          "gitHead": "e6807327c06dd6a311c63e124ff6a50e38b23804",
+          "bugs": {
+            "url": "https://github.com/chevex/yargs/issues"
+          },
+          "homepage": "https://github.com/chevex/yargs",
+          "_id": "yargs@1.3.3",
+          "_shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+          "_from": "yargs@*",
+          "_npmVersion": "2.1.7",
+          "_nodeVersion": "0.10.33",
+          "_npmUser": {
+            "name": "chevex",
+            "email": "alex.ford@codetunnel.com"
+          },
+          "maintainers": [
+            {
+              "name": "chevex",
+              "email": "alex.ford@codetunnel.com"
+            }
+          ],
+          "dist": {
+            "shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+            "tarball": "http://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "yargs",
+          "_dependencies": {},
+          "extraneous": false,
+          "path": "/Users/timoxley/Projects/installed/node_modules/yargs",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/yargs",
           "parent": "[Circular ~.0.parent]",
           "depth": 1,
           "peerDependencies": {}
@@ -297,12 +388,14 @@
           "peerDependencies": {}
         }
       },
-      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\n### Why\n\nArrays are a *far* easier to process and reason about than nested objects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 1.2.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`1.2.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
+      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\nArrays are a *far* easier to process and reason about than nested objects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n```\n\n## CLI\n\n```\n> installed --help\nGet a JSON dump of installed package data.\n\nUsage: installed [options]\n\nOptions:\n  --dev            Include development dependencies.\n  --extraneous     Show extraneous dependencies                                                                   [default: true]\n  --no-extraneous  Filter extraneous dependencies. This will include --dev dependencies if --dev is not enabled.\n  --depth          Traversal depth. use --depth=Infinity or --depth=-1 to traverse entire dependency tree.        [default: 0]\n  --color          Display coloured output. Auto-disabled if output is not a terminal.                            [default: true]\n  --no-color       Don't display coloured output, strictly JSON.\n  --json           Produce JSON output. Implies --no-color.\n  --help           Show help\n  --version        Show version number\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 2.0.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`2.0.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
       "readmeFilename": "Readme.md",
-      "_id": "installed@1.0.0",
+      "gitHead": "dd202aa6be700da10810b7e826c24bff7c82c766",
+      "_id": "installed@2.0.1",
       "realName": "installed",
       "_dependencies": {
-        "read-installed": "^3.1.5"
+        "read-installed": "^3.1.5",
+        "yargs": "^1.3.3"
       },
       "extraneous": false,
       "path": "/Users/timoxley/Projects/installed",
@@ -313,5 +406,41 @@
     },
     "depth": 1,
     "peerDependencies": "[Circular ~.0.parent.dependencies.read-installed.peerDependencies]"
+  },
+  {
+    "dependencies": "[Circular ~.0.parent.dependencies.yargs.dependencies]",
+    "name": "yargs",
+    "version": "1.3.3",
+    "description": "Light-weight option parsing with an argv hash. No optstrings attached.",
+    "main": "./index.js",
+    "devDependencies": "[Circular ~.0.parent.dependencies.yargs.devDependencies]",
+    "scripts": "[Circular ~.0.parent.dependencies.yargs.scripts]",
+    "repository": "[Circular ~.0.parent.dependencies.yargs.repository]",
+    "keywords": "[Circular ~.0.parent.dependencies.yargs.keywords]",
+    "author": "[Circular ~.0.parent.dependencies.yargs.author]",
+    "contributors": "[Circular ~.0.parent.dependencies.yargs.contributors]",
+    "license": "MIT/X11",
+    "engine": "[Circular ~.0.parent.dependencies.yargs.engine]",
+    "gitHead": "e6807327c06dd6a311c63e124ff6a50e38b23804",
+    "bugs": "[Circular ~.0.parent.dependencies.yargs.bugs]",
+    "homepage": "https://github.com/chevex/yargs",
+    "_id": "yargs@1.3.3",
+    "_shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+    "_from": "yargs@*",
+    "_npmVersion": "2.1.7",
+    "_nodeVersion": "0.10.33",
+    "_npmUser": "[Circular ~.0.parent.dependencies.yargs._npmUser]",
+    "maintainers": "[Circular ~.0.parent.dependencies.yargs.maintainers]",
+    "dist": "[Circular ~.0.parent.dependencies.yargs.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.yargs.directories]",
+    "_resolved": "https://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz",
+    "readme": "ERROR: No README data found!",
+    "realName": "yargs",
+    "extraneous": false,
+    "path": "/Users/timoxley/Projects/installed/node_modules/yargs",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/yargs",
+    "parent": "[Circular ~.0.parent]",
+    "depth": 1,
+    "peerDependencies": "[Circular ~.0.parent.dependencies.yargs.peerDependencies]"
   }
 ]
