@@ -51,13 +51,20 @@ function getDependencies(mod, result, visited, depth) {
     if (typeof dep === "string") return;
     if (visited[dep.realPath]) return;
     visited[dep.realPath] = true;
-    var obj = assign({ dependencies: dep._dependencies }, dep);
-    delete obj._dependencies;
-    if (obj.parent === obj) delete obj.parent;
+    var obj = clean(dep);
     result.push(assign({}, obj));
     getDependencies(dep, result, visited, depth + 1);
   });
   return result;
+}
+
+function clean(dep) {
+  var obj = assign({}, dep);
+  obj.dependencies = obj._dependencies;
+  delete obj._dependencies;
+  if (obj.parent === obj) delete obj.parent;
+  if (obj.parent && obj.parent._dependencies) obj.parent = clean(obj.parent);
+  return obj;
 }
 
 function isDevDependency(dep) {
