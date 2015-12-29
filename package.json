@@ -1,6 +1,6 @@
 {
   "name": "installed",
-  "version": "3.1.1",
+  "version": "3.3.0",
   "description": "Read all the installed packages in a folder, and produce an Array of all the data.",
   "main": "installed.js",
   "bin": {
