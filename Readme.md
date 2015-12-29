@@ -5,7 +5,8 @@ Read all the installed packages in a folder, and produce an Array of all the dat
 A wrapper around npm's [read-installed](https://github.com/npm/read-installed) that
 produces a flat array rather than a nested tree structure. Also adds a few bells and whistles.
 
-Arrays are a *far* easier to process and reason about than nested objects.
+Why? Arrays are *far* easier to process and reason about than nested
+objects.
 
 ## Installation
 
@@ -34,13 +35,29 @@ installed(process.cwd(), options, function(err, pkgs) {
 
   console.log(pkgVersions.join('\n'))
 })
+
+```
+
+### `installed.toArray`
+
+```js
+var installed = require('installed')
+
+// some pre-calculated npm-ls json data
+// e.g. npm ls --json > ./data.json
+var depsData = require('./data.json')
+
+// convert nested deps data to array
+var depsArray = installed.toArray(depsData)
+
+
 ```
 
 ## CLI
 
 ```
 > installed --help
-Get a JSON dump of installed package data.
+Read installed package data.
 
 Usage: installed [options]
 

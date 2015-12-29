@@ -8,7 +8,7 @@ var fs = require('fs')
 var stringify = require('json-stringify-safe')
 
 var argv = require('yargs')
-.usage('Installed package data.\n\nUsage: $0 [options]')
+.usage('Read installed package data.\n\nUsage: $0 [options]')
 .boolean('dev')
 .describe('dev', 'Include development dependencies.')
 .boolean('extraneous')

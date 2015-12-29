@@ -1,77 +1,10 @@
 [
   {
-    "name": "read-installed",
-    "description": "Read all the installed packages in a folder, and return a tree structure with all the data.",
-    "version": "3.1.5",
-    "repository": {
-      "type": "git",
-      "url": "git://github.com/isaacs/read-installed"
-    },
-    "main": "read-installed.js",
-    "scripts": {
-      "test": "tap ./test/*.js"
-    },
-    "dependencies": {
-      "debuglog": "^1.0.1",
-      "read-package-json": "1",
-      "readdir-scoped-modules": "^1.0.0",
-      "semver": "2 || 3 || 4",
-      "slide": "~1.1.3",
-      "util-extend": "^1.0.1",
-      "graceful-fs": "2 || 3"
-    },
-    "optionalDependencies": {
-      "graceful-fs": "2 || 3"
-    },
-    "author": {
-      "name": "Isaac Z. Schlueter",
-      "email": "i@izs.me",
-      "url": "http://blog.izs.me/"
-    },
-    "license": "ISC",
-    "devDependencies": {
-      "mkdirp": "^0.5.0",
-      "rimraf": "^2.2.8",
-      "tap": "~0.4.8"
-    },
-    "gitHead": "577c3f3f4f1e435f9bd944b8f99ce3f7552709ef",
-    "bugs": {
-      "url": "https://github.com/isaacs/read-installed/issues"
-    },
-    "homepage": "https://github.com/isaacs/read-installed",
-    "_id": "read-installed@3.1.5",
-    "_shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
-    "_from": "read-installed@*",
+    "invalid": true,
     "_npmVersion": "2.1.15",
-    "_nodeVersion": "0.10.34",
-    "_npmUser": {
-      "name": "othiym23",
-      "email": "ogd@aoaioxxysz.net"
-    },
-    "maintainers": [
-      {
-        "name": "isaacs",
-        "email": "i@izs.me"
-      },
-      {
-        "name": "othiym23",
-        "email": "ogd@aoaioxxysz.net"
-      }
-    ],
-    "dist": {
-      "shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
-      "tarball": "http://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz"
-    },
-    "directories": {},
-    "_resolved": "https://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz",
-    "readme": "ERROR: No README data found!",
-    "realName": "read-installed",
-    "extraneous": false,
-    "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
-    "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
     "parent": {
       "name": "installed",
-      "version": "2.0.2",
+      "version": "3.3.0",
       "description": "Read all the installed packages in a folder, and produce an Array of all the data.",
       "main": "installed.js",
       "bin": {
@@ -81,11 +14,24 @@
         "test": "make test",
         "prepublish": "make prepublish"
       },
+      "babel": {
+        "presets": [
+          "es2015"
+        ]
+      },
       "keywords": [
         "read-installed",
-        "package",
         "npm",
-        "installed"
+        "installed",
+        "package",
+        "packages",
+        "deps",
+        "module",
+        "dependency",
+        "dependencies",
+        "pkg",
+        "npm",
+        "node_modules"
       ],
       "author": {
         "name": "Tim Oxley",
@@ -93,12 +39,711 @@
       },
       "license": "MIT",
       "devDependencies": {
-        "6to5": "^2.13.7",
-        "json-stringify-safe": "^5.0.0"
+        "babel": "^6.3.26",
+        "babel-cli": "^6.3.17",
+        "babel-preset-es2015": "^6.3.13"
       },
       "dependencies": {
-        "read-installed": "^3.1.5",
-        "yargs": "^1.3.3"
+        "read-installed": {
+          "name": "read-installed",
+          "description": "Read all the installed packages in a folder, and return a tree structure with all the data.",
+          "version": "3.1.5",
+          "repository": {
+            "type": "git",
+            "url": "git://github.com/isaacs/read-installed"
+          },
+          "main": "read-installed.js",
+          "scripts": {
+            "test": "tap ./test/*.js"
+          },
+          "dependencies": {},
+          "optionalDependencies": {
+            "graceful-fs": "2 || 3"
+          },
+          "author": {
+            "name": "Isaac Z. Schlueter",
+            "email": "i@izs.me",
+            "url": "http://blog.izs.me/"
+          },
+          "license": "ISC",
+          "devDependencies": {
+            "mkdirp": "^0.5.0",
+            "rimraf": "^2.2.8",
+            "tap": "~0.4.8"
+          },
+          "gitHead": "577c3f3f4f1e435f9bd944b8f99ce3f7552709ef",
+          "bugs": {
+            "url": "https://github.com/isaacs/read-installed/issues"
+          },
+          "homepage": "https://github.com/isaacs/read-installed",
+          "_id": "read-installed@3.1.5",
+          "_shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
+          "_from": "read-installed@*",
+          "_npmVersion": "2.1.15",
+          "_nodeVersion": "0.10.34",
+          "_npmUser": {
+            "name": "othiym23",
+            "email": "ogd@aoaioxxysz.net"
+          },
+          "maintainers": [
+            {
+              "name": "isaacs",
+              "email": "i@izs.me"
+            },
+            {
+              "name": "othiym23",
+              "email": "ogd@aoaioxxysz.net"
+            }
+          ],
+          "dist": {
+            "shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c",
+            "tarball": "http://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "read-installed",
+          "_dependencies": {
+            "debuglog": "^1.0.1",
+            "read-package-json": "1",
+            "readdir-scoped-modules": "^1.0.0",
+            "semver": "2 || 3 || 4",
+            "slide": "~1.1.3",
+            "util-extend": "^1.0.1",
+            "graceful-fs": "2 || 3"
+          },
+          "invalid": true,
+          "extraneous": false,
+          "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "json-stringify-safe": {
+          "name": "json-stringify-safe",
+          "version": "5.0.0",
+          "description": "Like JSON.stringify, but doesn't blow up on circular refs",
+          "main": "stringify.js",
+          "scripts": {
+            "test": "node test.js"
+          },
+          "repository": {
+            "type": "git",
+            "url": "git://github.com/isaacs/json-stringify-safe"
+          },
+          "keywords": [
+            "json",
+            "stringify",
+            "circular",
+            "safe"
+          ],
+          "author": {
+            "name": "Isaac Z. Schlueter",
+            "email": "i@izs.me",
+            "url": "http://blog.izs.me"
+          },
+          "license": "BSD",
+          "bugs": {
+            "url": "https://github.com/isaacs/json-stringify-safe/issues"
+          },
+          "_id": "json-stringify-safe@5.0.0",
+          "dist": {
+            "shasum": "4c1f228b5050837eba9d21f50c2e6e320624566e",
+            "tarball": "http://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz"
+          },
+          "_from": "json-stringify-safe@*",
+          "_npmVersion": "1.3.6",
+          "_npmUser": {
+            "name": "isaacs",
+            "email": "i@izs.me"
+          },
+          "maintainers": [
+            {
+              "name": "isaacs",
+              "email": "i@izs.me"
+            }
+          ],
+          "directories": {},
+          "_shasum": "4c1f228b5050837eba9d21f50c2e6e320624566e",
+          "_resolved": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz",
+          "readme": "ERROR: No README data found!",
+          "homepage": "https://github.com/isaacs/json-stringify-safe",
+          "realName": "json-stringify-safe",
+          "dependencies": {},
+          "_dependencies": {},
+          "invalid": true,
+          "extraneous": false,
+          "path": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "babel": {
+          "name": "babel",
+          "version": "6.3.26",
+          "description": "Turn ES6 code into readable vanilla ES5 with source maps",
+          "author": {
+            "name": "Sebastian McKenzie",
+            "email": "sebmck@gmail.com"
+          },
+          "homepage": "https://babeljs.io/",
+          "license": "MIT",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/babel/babel/tree/master/packages/babel"
+          },
+          "preferGlobal": true,
+          "bin": {
+            "babel": "./cli.js",
+            "babel-node": "./cli.js",
+            "babel-external-helpers": "./cli.js"
+          },
+          "_id": "babel@6.3.26",
+          "scripts": {},
+          "_shasum": "7bf8967bd2de7c3645a107080094c2c9df706886",
+          "_from": "babel@*",
+          "_npmVersion": "2.14.7",
+          "_nodeVersion": "4.2.2",
+          "_npmUser": {
+            "name": "amasad",
+            "email": "amjad.masad@gmail.com"
+          },
+          "maintainers": [
+            {
+              "name": "amasad",
+              "email": "amjad.masad@gmail.com"
+            },
+            {
+              "name": "hzoo",
+              "email": "hi@henryzoo.com"
+            },
+            {
+              "name": "jmm",
+              "email": "npm-public@jessemccarthy.net"
+            },
+            {
+              "name": "loganfsmyth",
+              "email": "loganfsmyth@gmail.com"
+            },
+            {
+              "name": "sebmck",
+              "email": "sebmck@gmail.com"
+            },
+            {
+              "name": "thejameskyle",
+              "email": "me@thejameskyle.com"
+            }
+          ],
+          "dist": {
+            "shasum": "7bf8967bd2de7c3645a107080094c2c9df706886",
+            "tarball": "http://registry.npmjs.org/babel/-/babel-6.3.26.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/babel/-/babel-6.3.26.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "babel",
+          "dependencies": {},
+          "_dependencies": {},
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/babel",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/babel",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "babel-cli": {
+          "name": "babel-cli",
+          "version": "6.3.17",
+          "description": "Babel command line.",
+          "author": {
+            "name": "Sebastian McKenzie",
+            "email": "sebmck@gmail.com"
+          },
+          "homepage": "https://babeljs.io/",
+          "license": "MIT",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/babel/babel/tree/master/packages/babel-cli"
+          },
+          "dependencies": {},
+          "devDependencies": {
+            "babel-helper-fixtures": "^6.3.13"
+          },
+          "bin": {
+            "babel-doctor": "./bin/babel-doctor.js",
+            "babel": "./bin/babel.js",
+            "babel-node": "./bin/babel-node.js",
+            "babel-external-helpers": "./bin/babel-external-helpers.js"
+          },
+          "_id": "babel-cli@6.3.17",
+          "scripts": {},
+          "_shasum": "3b7630d6b448e042ef1caa1d4340956becb75fdb",
+          "_from": "babel-cli@*",
+          "_npmVersion": "2.14.7",
+          "_nodeVersion": "4.2.2",
+          "_npmUser": {
+            "name": "amasad",
+            "email": "amjad.masad@gmail.com"
+          },
+          "maintainers": [
+            {
+              "name": "amasad",
+              "email": "amjad.masad@gmail.com"
+            },
+            {
+              "name": "hzoo",
+              "email": "hi@henryzoo.com"
+            },
+            {
+              "name": "jmm",
+              "email": "npm-public@jessemccarthy.net"
+            },
+            {
+              "name": "loganfsmyth",
+              "email": "loganfsmyth@gmail.com"
+            },
+            {
+              "name": "sebmck",
+              "email": "sebmck@gmail.com"
+            },
+            {
+              "name": "thejameskyle",
+              "email": "me@thejameskyle.com"
+            }
+          ],
+          "dist": {
+            "shasum": "3b7630d6b448e042ef1caa1d4340956becb75fdb",
+            "tarball": "http://registry.npmjs.org/babel-cli/-/babel-cli-6.3.17.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/babel-cli/-/babel-cli-6.3.17.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "babel-cli",
+          "_dependencies": {
+            "babel-core": "^6.3.17",
+            "babel-register": "^6.3.13",
+            "babel-polyfill": "^6.3.13",
+            "babel-runtime": "^5.0.0",
+            "bin-version-check": "^2.1.0",
+            "chalk": "1.1.1",
+            "chokidar": "^1.0.0",
+            "commander": "^2.8.1",
+            "convert-source-map": "^1.1.0",
+            "fs-readdir-recursive": "^0.1.0",
+            "glob": "^5.0.5",
+            "lodash": "^3.2.0",
+            "log-symbols": "^1.0.2",
+            "output-file-sync": "^1.1.0",
+            "path-exists": "^1.0.0",
+            "path-is-absolute": "^1.0.0",
+            "request": "^2.65.0",
+            "slash": "^1.0.0",
+            "source-map": "^0.5.0",
+            "v8flags": "^2.0.10"
+          },
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/babel-cli",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/babel-cli",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "babel-polyfill": {
+          "name": "babel-polyfill",
+          "version": "6.3.14",
+          "author": {
+            "name": "Sebastian McKenzie",
+            "email": "sebmck@gmail.com"
+          },
+          "homepage": "https://babeljs.io/",
+          "license": "MIT",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/babel/babel/tree/master/packages/babel-polyfill"
+          },
+          "main": "lib/index.js",
+          "dependencies": {},
+          "_id": "babel-polyfill@6.3.14",
+          "scripts": {},
+          "_shasum": "1872298ede5b9f7b02ec7807bd3dd301c189c440",
+          "_from": "babel-polyfill@*",
+          "_npmVersion": "3.3.12",
+          "_nodeVersion": "5.1.0",
+          "_npmUser": {
+            "name": "hzoo",
+            "email": "hi@henryzoo.com"
+          },
+          "dist": {
+            "shasum": "1872298ede5b9f7b02ec7807bd3dd301c189c440",
+            "tarball": "http://registry.npmjs.org/babel-polyfill/-/babel-polyfill-6.3.14.tgz"
+          },
+          "maintainers": [
+            {
+              "name": "amasad",
+              "email": "amjad.masad@gmail.com"
+            },
+            {
+              "name": "hzoo",
+              "email": "hi@henryzoo.com"
+            },
+            {
+              "name": "jmm",
+              "email": "npm-public@jessemccarthy.net"
+            },
+            {
+              "name": "loganfsmyth",
+              "email": "loganfsmyth@gmail.com"
+            },
+            {
+              "name": "sebmck",
+              "email": "sebmck@gmail.com"
+            },
+            {
+              "name": "thejameskyle",
+              "email": "me@thejameskyle.com"
+            }
+          ],
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/babel-polyfill/-/babel-polyfill-6.3.14.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "babel-polyfill",
+          "_dependencies": {
+            "core-js": "^1.0.1",
+            "babel-regenerator-runtime": "^6.3.13",
+            "babel-runtime": "^5.0.0"
+          },
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/babel-polyfill",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/babel-polyfill",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "babel-preset-es2015": {
+          "name": "babel-preset-es2015",
+          "version": "6.3.13",
+          "description": "Babel preset for all es2015 plugins.",
+          "author": {
+            "name": "Sebastian McKenzie",
+            "email": "sebmck@gmail.com"
+          },
+          "homepage": "https://babeljs.io/",
+          "license": "MIT",
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/babel/babel/tree/master/packages/babel-preset-es2015"
+          },
+          "main": "index.js",
+          "dependencies": {},
+          "devDependencies": {
+            "babel-helper-transform-fixture-test-runner": "^6.3.13"
+          },
+          "_id": "babel-preset-es2015@6.3.13",
+          "scripts": {},
+          "_shasum": "97dce7ef292e18cb9b2b7545d80c593c28d9517f",
+          "_from": "babel-preset-es2015@*",
+          "_npmVersion": "3.3.10",
+          "_nodeVersion": "4.1.0",
+          "_npmUser": {
+            "name": "sebmck",
+            "email": "sebmck@gmail.com"
+          },
+          "dist": {
+            "shasum": "97dce7ef292e18cb9b2b7545d80c593c28d9517f",
+            "tarball": "http://registry.npmjs.org/babel-preset-es2015/-/babel-preset-es2015-6.3.13.tgz"
+          },
+          "maintainers": [
+            {
+              "name": "amasad",
+              "email": "amjad.masad@gmail.com"
+            },
+            {
+              "name": "hzoo",
+              "email": "hi@henryzoo.com"
+            },
+            {
+              "name": "jmm",
+              "email": "npm-public@jessemccarthy.net"
+            },
+            {
+              "name": "loganfsmyth",
+              "email": "loganfsmyth@gmail.com"
+            },
+            {
+              "name": "sebmck",
+              "email": "sebmck@gmail.com"
+            },
+            {
+              "name": "thejameskyle",
+              "email": "me@thejameskyle.com"
+            }
+          ],
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/babel-preset-es2015/-/babel-preset-es2015-6.3.13.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "babel-preset-es2015",
+          "_dependencies": {
+            "babel-plugin-transform-es2015-template-literals": "^6.3.13",
+            "babel-plugin-transform-es2015-literals": "^6.3.13",
+            "babel-plugin-transform-es2015-function-name": "^6.3.13",
+            "babel-plugin-transform-es2015-arrow-functions": "^6.3.13",
+            "babel-plugin-transform-es2015-block-scoped-functions": "^6.3.13",
+            "babel-plugin-transform-es2015-classes": "^6.3.13",
+            "babel-plugin-transform-es2015-object-super": "^6.3.13",
+            "babel-plugin-transform-es2015-shorthand-properties": "^6.3.13",
+            "babel-plugin-transform-es2015-computed-properties": "^6.3.13",
+            "babel-plugin-transform-es2015-for-of": "^6.3.13",
+            "babel-plugin-transform-es2015-sticky-regex": "^6.3.13",
+            "babel-plugin-transform-es2015-unicode-regex": "^6.3.13",
+            "babel-plugin-check-es2015-constants": "^6.3.13",
+            "babel-plugin-transform-es2015-spread": "^6.3.13",
+            "babel-plugin-transform-es2015-parameters": "^6.3.13",
+            "babel-plugin-transform-es2015-destructuring": "^6.3.13",
+            "babel-plugin-transform-es2015-block-scoping": "^6.3.13",
+            "babel-plugin-transform-es2015-typeof-symbol": "^6.3.13",
+            "babel-plugin-transform-es2015-modules-commonjs": "^6.3.13",
+            "babel-plugin-transform-regenerator": "^6.3.13"
+          },
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/babel-preset-es2015",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/babel-preset-es2015",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "yargs": {
+          "name": "yargs",
+          "version": "1.3.3",
+          "description": "Light-weight option parsing with an argv hash. No optstrings attached.",
+          "main": "./index.js",
+          "dependencies": {},
+          "devDependencies": {
+            "hashish": "*",
+            "mocha": "*",
+            "chai": "*"
+          },
+          "scripts": {
+            "test": "mocha -R nyan"
+          },
+          "repository": {
+            "type": "git",
+            "url": "http://github.com/chevex/yargs.git"
+          },
+          "keywords": [
+            "argument",
+            "args",
+            "option",
+            "parser",
+            "parsing",
+            "cli",
+            "command"
+          ],
+          "author": {
+            "name": "Alex Ford",
+            "email": "Alex.Ford@CodeTunnel.com",
+            "url": "http://CodeTunnel.com"
+          },
+          "contributors": [
+            {
+              "name": "Chris Needham",
+              "email": "chris@chrisneedham.com",
+              "url": "http://chrisneedham.com"
+            },
+            {
+              "name": "James Nylen",
+              "email": "jnylen@gmail.com",
+              "url": "https://github.com/nylen"
+            },
+            {
+              "name": "Benjamin Horsleben",
+              "url": "https://github.com/fizker"
+            }
+          ],
+          "license": "MIT/X11",
+          "engine": {
+            "node": ">=0.4"
+          },
+          "gitHead": "e6807327c06dd6a311c63e124ff6a50e38b23804",
+          "bugs": {
+            "url": "https://github.com/chevex/yargs/issues"
+          },
+          "homepage": "https://github.com/chevex/yargs",
+          "_id": "yargs@1.3.3",
+          "_shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+          "_from": "yargs@*",
+          "_npmVersion": "2.1.7",
+          "_nodeVersion": "0.10.33",
+          "_npmUser": {
+            "name": "chevex",
+            "email": "alex.ford@codetunnel.com"
+          },
+          "maintainers": [
+            {
+              "name": "chevex",
+              "email": "alex.ford@codetunnel.com"
+            }
+          ],
+          "dist": {
+            "shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+            "tarball": "http://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz",
+          "readme": "ERROR: No README data found!",
+          "realName": "yargs",
+          "_dependencies": {},
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/yargs",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/yargs",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "flat": {
+          "name": "flat",
+          "version": "1.5.1",
+          "main": "index.js",
+          "scripts": {
+            "test": "mocha -u tdd --reporter spec"
+          },
+          "license": "BSD",
+          "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys",
+          "devDependencies": {
+            "mocha": "~1.6.0"
+          },
+          "directories": {
+            "test": "test"
+          },
+          "dependencies": {},
+          "repository": {
+            "type": "git",
+            "url": "git://github.com/hughsk/flat.git"
+          },
+          "keywords": [
+            "flat",
+            "json",
+            "flatten",
+            "unflatten",
+            "split",
+            "object",
+            "nested"
+          ],
+          "author": {
+            "name": "Hugh Kennedy",
+            "email": "hughskennedy@gmail.com",
+            "url": "http://hughskennedy.com"
+          },
+          "bugs": {
+            "url": "https://github.com/hughsk/flat/issues"
+          },
+          "homepage": "https://github.com/hughsk/flat",
+          "gitHead": "b573069344ad88a5e65ad88a5e58804649345c8f",
+          "_id": "flat@1.5.1",
+          "_shasum": "a2905a886d6f5551c58d0d745b562a38b843c062",
+          "_from": "flat@*",
+          "_npmVersion": "2.6.0",
+          "_nodeVersion": "0.10.36",
+          "_npmUser": {
+            "name": "timoxley",
+            "email": "secoif@gmail.com"
+          },
+          "maintainers": [
+            {
+              "name": "hughsk",
+              "email": "hughskennedy@gmail.com"
+            },
+            {
+              "name": "timoxley",
+              "email": "secoif@gmail.com"
+            }
+          ],
+          "dist": {
+            "shasum": "a2905a886d6f5551c58d0d745b562a38b843c062",
+            "tarball": "http://registry.npmjs.org/flat/-/flat-1.5.1.tgz"
+          },
+          "_resolved": "https://registry.npmjs.org/flat/-/flat-1.5.1.tgz",
+          "readme": "# flat [![Build Status](https://secure.travis-ci.org/hughsk/flat.png?branch=master)](http://travis-ci.org/hughsk/flat)\n\nTake a nested Javascript object and flatten it, or unflatten an object with\ndelimited keys.\n\n## Installation\n\n``` bash\n$ npm install flat\n```\n\n## Methods\n\n### flatten(original, options)\n\nFlattens the object - it'll return an object one level deep, regardless of how\nnested the original object was:\n\n``` javascript\nvar flatten = require('flat')\n\nflatten({\n    key1: {\n        keyA: 'valueI'\n    },\n    key2: {\n        keyB: 'valueII'\n    },\n    key3: { a: { b: { c: 2 } } }\n})\n\n// {\n//   'key1.keyA': 'valueI',\n//   'key2.keyB': 'valueII',\n//   'key3.a.b.c': 2\n// }\n```\n\n### unflatten(original, options)\n\nFlattening is reversible too, you can call `flatten.unflatten()` on an object:\n\n``` javascript\nvar unflatten = require('flat').unflatten\n\nunflatten({\n    'three.levels.deep': 42,\n    'three.levels': {\n        nested: true\n    }\n})\n\n// {\n//     three: {\n//         levels: {\n//             deep: 42,\n//             nested: true\n//         }\n//     }\n// }\n```\n\n## Options\n\n### delimiter\n\nUse a custom delimiter for (un)flattening your objects, instead of `.`.\n\n### safe\n\nWhen enabled, both `flat` and `unflatten` will preserve arrays and their\ncontents. This is disabled by default.\n\n``` javascript\nvar flatten = require('flat')\n\nflatten({\n    this: [\n        { contains: 'arrays' },\n        { preserving: {\n              them: 'for you'\n        }}\n    ]\n}, {\n    safe: true\n})\n\n// {\n//     'this': [\n//         { contains: 'arrays' },\n//         { preserving: {\n//             them: 'for you'\n//         }}\n//     ]\n// }\n```\n\n### object\n\nWhen enabled, arrays will not be created automatically when using calling\nunflatten, like so:\n\n``` javascript\nunflatten({\n    'hello.you.0': 'ipsum',\n    'hello.you.1': 'lorem',\n    'hello.other.world': 'foo'\n}, { object: true })\n\n// hello: {\n//     you: {\n//         0: 'ipsum',\n//         1: 'lorem',\n//     },\n//     other: { world: 'foo' }\n// }\n```\n\n### overwrite\n\nWhen enabled, existing keys in the unflattened object may be overwritten if they cannot hold a newly encountered nested value:\n\n```javascript\nunflatten({\n    'TRAVIS': 'true',\n    'TRAVIS_DIR': '/home/travis/build/kvz/environmental'\n}, { overwrite: true })\n\n// TRAVIS: {\n//     DIR: '/home/travis/build/kvz/environmental'\n// }\n```\n\nWithout `overwrite` set to `true`, the `TRAVIS` key would already have been set to a string, thus could not accept the nested `DIR` element.\n\nThis only makes sense on ordered arrays, and since we're overwriting data, should be used with care.\n\n",
+          "readmeFilename": "README.md",
+          "realName": "flat",
+          "_dependencies": {},
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/flat",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/flat",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        },
+        "split-object": {
+          "name": "split-object",
+          "version": "2.1.0",
+          "description": "Work with Objects using built-in functional Array methods",
+          "main": "index.js",
+          "scripts": {
+            "test": "tape test.js | tap-spec"
+          },
+          "keywords": [
+            "object",
+            "map",
+            "functional",
+            "collection",
+            "array",
+            "dict",
+            "hash",
+            "dictionary"
+          ],
+          "author": {
+            "name": "Tim Oxley",
+            "email": "secoif@gmail.com"
+          },
+          "license": "MIT",
+          "dependencies": {},
+          "devDependencies": {
+            "tap-spec": "^2.1.2",
+            "tape": "^3.0.3"
+          },
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/timoxley/split-object.git"
+          },
+          "bugs": {
+            "url": "https://github.com/timoxley/split-object/issues"
+          },
+          "homepage": "https://github.com/timoxley/split-object",
+          "gitHead": "11b50cb0ee5fdebddda40c7c8a68f600f1238237",
+          "_id": "split-object@2.1.0",
+          "_shasum": "5116c03eef7cd4b104ffac34eed4549c5d97d443",
+          "_from": "split-object@*",
+          "_npmVersion": "2.5.0",
+          "_nodeVersion": "0.10.36",
+          "_npmUser": {
+            "name": "timoxley",
+            "email": "secoif@gmail.com"
+          },
+          "maintainers": [
+            {
+              "name": "timoxley",
+              "email": "secoif@gmail.com"
+            }
+          ],
+          "dist": {
+            "shasum": "5116c03eef7cd4b104ffac34eed4549c5d97d443",
+            "tarball": "http://registry.npmjs.org/split-object/-/split-object-2.1.0.tgz"
+          },
+          "directories": {},
+          "_resolved": "https://registry.npmjs.org/split-object/-/split-object-2.1.0.tgz",
+          "readme": "# split-object\n\nMinimal tool for working with Objects using built-in functional Array\nmethods.\n\n`split-object` will split an Object into an Array of keys & values,\nallowing you to manipulate the Object using Array methods then join\nvalues back into an Object.\n\nIn comparison to `for..in` or `Object.keys().forEach()` an Array of the\nform `[{key1: value1}, {key2: value2}]` can be a far more natural &\nconvenient structure to work with.\n\n`split-object` has both a `split` and a `join` method, similar to how\n`String#split`/`Array#join` combine to convert back & forward between\nStrings & Arrays.\n\n[Post ES6](https://esdiscuss.org/topic/es6-iteration-over-object-values) we\nmight see some better methods for iterating over Objects.\n\n## Installation\n\n```\nnpm install split-object\n```\n\n## Usage\n\n```js\nvar salad = {\n  apples: 1,\n  bananas: 3,\n  carrots: 2\n}\n\n// transform each key/value using Array.prototype.map\nvar loudIngredients = split(salad).map(function(ingredient) {\n  ingredient.key = ingredient.key.toUpperCase()\n  ingredient.value *= 3\n  return ingredient\n})\n\n// loudIngredients:\n// [\n//   { key: 'APPLES', value: 3 },\n//   { key: 'BANANAS', value: 9 },\n//   { key: 'CARROTS', value: 6 }\n// ]\n\nvar loudSalad = split.join(loudIngredients)\n\n// loudSalad:\n// {\n//    APPLES: 3,\n//    BANANAS: 9,\n//    CARROTS: 6\n// }\n//\n```\n\n## Examples\n\n### Iterating Keys & Values\n\n```js\n// with object-split\nsplit(salad).forEach(function(item) {\n  console.log(item.key, item.value)\n})\n```\n\n```js\n// without object-split\nObject.keys(salad).forEach(function(key) {\n  var value = salad[key]\n  console.log(key, value)\n})\n\n// or\nfor (var key in salad) {\n  var value = salad[key]\n  console.log(key, value)\n}\n```\n\n### Chaining Transformations\n\n```js\n// with object-split\nvar pieces = split(salad)\n.map(function(kv) {\n  kv.value = calculate(kv.value)\n  return kv\n})\n.map(function(kv) {\n  kv.value = recalculate(kv.value)\n  return kv\n})\nvar newSalad = split.join(pieces)\n```\n\nWithout splitting the Object into a similar structure to `split-object`, you're\nstuck with losing the keys (which is acceptable if you can deduce keys from the\nvalue) or using multiple `reduce` calls/`for..of` iteration:\n\n```js\n// without object-split\nvar newSalad = Object.keys(salad)\n.reduce(function(obj, key) {\n  var value = salad[key]\n  obj[key] = calculate(value)\n  return obj\n}, {})\nnewSalad = Object.keys(newSalad)\n.reduce(function(obj, key) {\n  var value = newSalad[key]\n  obj[key] = recalculate(value)\n  return obj\n}, {})\n```\n\n`split-object` doesn't save a huge number of lines, but it\nsaves some complexity, enables easier chaining and removes the hassle\nof extracting the value from the object on each iteration.\n\n## Custom Key/Value Names\n\nTo provide more semantic key/value names, supply a second argument to\neither `split` or `join` with the key/value mapping:\n```js\nvar salad = {\n  apples: 1,\n  bananas: 3,\n  carrots: 2\n}\n\nvar loudIngredients = split(salad, {key: 'name', value: 'amount'}).map(function(ingredient) {\n  ingredient.name = ingredient.name.toUpperCase()\n  ingredient.amount *= 3\n  return ingredient\n})\n\n// loudIngredients:\n// [\n//   { name: 'APPLES', amount: 3 },\n//   { name: 'BANANAS', amount: 9 },\n//   { name: 'CARROTS', amount: 6 }\n// ]\n\nvar loudSalad = split.join(loudIngredients, {key: 'name', value: 'amount'})\n\n// loudSalad:\n// {\n//    APPLES: 3,\n//    BANANAS: 9,\n//    CARROTS: 6\n// }\n//\n\n```\n\nThis also means you can use `join` to create an Object out of any Array\nof Objects with two properties.\n\nRemember to also supply the mapping to join otherwise it won't be able to find the correct key/value pair to re-form the object.\n\n## See Also\n\n* [hughsk/flat](https://github.com/hughsk/flat) – Flatten/unflatten nested Javascript objects (Highly recommended for use with `split-object`).\n\n## License\n\nMIT\n",
+          "readmeFilename": "Readme.md",
+          "realName": "split-object",
+          "_dependencies": {},
+          "extraneous": true,
+          "path": "/Users/timoxley/Projects/installed/node_modules/split-object",
+          "realPath": "/Users/timoxley/Projects/installed/node_modules/split-object",
+          "parent": "[Circular ~.0.parent]",
+          "depth": 1,
+          "peerDependencies": {}
+        }
       },
       "repository": {
         "type": "git",
@@ -108,11 +753,15 @@
         "url": "https://github.com/timoxley/installed/issues"
       },
       "homepage": "https://github.com/timoxley/installed",
-      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\nArrays are a *far* easier to process and reason about than nested objects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n```\n\n## CLI\n\n```\n> installed --help\nGet a JSON dump of installed package data.\n\nUsage: installed [options]\n\nOptions:\n  --dev            Include development dependencies.\n  --extraneous     Show extraneous dependencies                                                                   [default: true]\n  --no-extraneous  Filter extraneous dependencies. This will include --dev dependencies if --dev is not enabled.\n  --depth          Traversal depth. use --depth=Infinity or --depth=-1 to traverse entire dependency tree.        [default: 0]\n  --color          Display coloured output. Auto-disabled if output is not a terminal.                            [default: true]\n  --no-color       Don't display coloured output, strictly JSON.\n  --json           Produce JSON output. Implies --no-color.\n  --help           Show help\n  --version        Show version number\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 2.0.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`2.0.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
+      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\nWhy? Arrays are *far* easier to process and reason about than nested\nobjects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n\n```\n\n### `installed.toArray`\n\n```js\nvar installed = require('installed')\n\n// some pre-calculated npm-ls json data\n// e.g. npm ls --json > ./data.json\nvar depsData = require('./data.json')\n\n// convert nested deps data to array\nvar depsArray = installed.toArray(depsData)\n\n\n```\n\n## CLI\n\n```\n> installed --help\nRead installed package data.\n\nUsage: installed [options]\n\nOptions:\n  --dev            Include development dependencies.\n  --extraneous     Show extraneous dependencies                                                                   [default: true]\n  --no-extraneous  Filter extraneous dependencies. This will include --dev dependencies if --dev is not enabled.\n  --depth          Traversal depth. use --depth=Infinity or --depth=-1 to traverse entire dependency tree.        [default: 0]\n  --color          Display coloured output. Auto-disabled if output is not a terminal.                            [default: true]\n  --no-color       Don't display coloured output, strictly JSON.\n  --json           Produce JSON output. Implies --no-color.\n  --help           Show help\n  --version        Show version number\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 2.0.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`2.0.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
       "readmeFilename": "Readme.md",
-      "gitHead": "863509e79ab5c0661fd3eb84023e08a3fe2de947",
-      "_id": "installed@2.0.2",
+      "gitHead": "35c37a6ed102d2b6a10de359d11cac4e65bd5a83",
+      "_id": "installed@3.3.0",
       "realName": "installed",
+      "_dependencies": {
+        "read-installed": "^4.0.3",
+        "json-stringify-safe": "^5.0.1"
+      },
       "extraneous": false,
       "path": "/Users/timoxley/Projects/installed",
       "realPath": "/Users/timoxley/Projects/installed",
@@ -120,120 +769,202 @@
       "peerDependencies": {},
       "root": true
     },
+    "_from": "read-installed@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+    "bugs": "[Circular ~.0.parent.dependencies.read-installed.bugs]",
+    "repository": "[Circular ~.0.parent.dependencies.read-installed.repository]",
+    "description": "Read all the installed packages in a folder, and return a tree structure with all the data.",
+    "author": "[Circular ~.0.parent.dependencies.read-installed.author]",
+    "gitHead": "577c3f3f4f1e435f9bd944b8f99ce3f7552709ef",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.read-installed.peerDependencies]",
+    "realName": "read-installed",
+    "_npmUser": "[Circular ~.0.parent.dependencies.read-installed._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.read-installed.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.read-installed.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.read-installed.scripts]",
+    "_id": "read-installed@3.1.5",
+    "license": "ISC",
+    "homepage": "https://github.com/isaacs/read-installed",
+    "maintainers": "[Circular ~.0.parent.dependencies.read-installed.maintainers]",
+    "name": "read-installed",
     "depth": 1,
-    "peerDependencies": {}
+    "devDependencies": "[Circular ~.0.parent.dependencies.read-installed.devDependencies]",
+    "main": "read-installed.js",
+    "extraneous": false,
+    "readme": "ERROR: No README data found!",
+    "version": "3.1.5",
+    "path": "/Users/timoxley/Projects/installed/node_modules/read-installed",
+    "_nodeVersion": "0.10.34",
+    "dependencies": "[Circular ~.0.parent.dependencies.read-installed.dependencies]",
+    "optionalDependencies": "[Circular ~.0.parent.dependencies.read-installed.optionalDependencies]",
+    "_resolved": "https://registry.npmjs.org/read-installed/-/read-installed-3.1.5.tgz",
+    "_shasum": "4ae36081afd3e2204dc2e279807aaa52c30c8c0c"
   },
   {
-    "name": "yargs",
-    "version": "1.3.3",
-    "description": "Light-weight option parsing with an argv hash. No optstrings attached.",
-    "main": "./index.js",
-    "dependencies": {},
-    "devDependencies": {
-      "hashish": "*",
-      "mocha": "*",
-      "chai": "*"
-    },
-    "scripts": {
-      "test": "mocha -R nyan"
-    },
-    "repository": {
-      "type": "git",
-      "url": "http://github.com/chevex/yargs.git"
-    },
-    "keywords": [
-      "argument",
-      "args",
-      "option",
-      "parser",
-      "parsing",
-      "cli",
-      "command"
-    ],
-    "author": {
-      "name": "Alex Ford",
-      "email": "Alex.Ford@CodeTunnel.com",
-      "url": "http://CodeTunnel.com"
-    },
-    "contributors": [
-      {
-        "name": "Chris Needham",
-        "email": "chris@chrisneedham.com",
-        "url": "http://chrisneedham.com"
-      },
-      {
-        "name": "James Nylen",
-        "email": "jnylen@gmail.com",
-        "url": "https://github.com/nylen"
-      },
-      {
-        "name": "Benjamin Horsleben",
-        "url": "https://github.com/fizker"
-      }
-    ],
-    "license": "MIT/X11",
-    "engine": {
-      "node": ">=0.4"
-    },
-    "gitHead": "e6807327c06dd6a311c63e124ff6a50e38b23804",
-    "bugs": {
-      "url": "https://github.com/chevex/yargs/issues"
-    },
-    "homepage": "https://github.com/chevex/yargs",
-    "_id": "yargs@1.3.3",
-    "_shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
-    "_from": "yargs@*",
-    "_npmVersion": "2.1.7",
-    "_nodeVersion": "0.10.33",
-    "_npmUser": {
-      "name": "chevex",
-      "email": "alex.ford@codetunnel.com"
-    },
-    "maintainers": [
-      {
-        "name": "chevex",
-        "email": "alex.ford@codetunnel.com"
-      }
-    ],
-    "dist": {
-      "shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
-      "tarball": "http://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz"
-    },
-    "directories": {},
-    "_resolved": "https://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz",
-    "readme": "ERROR: No README data found!",
-    "realName": "yargs",
-    "extraneous": false,
-    "path": "/Users/timoxley/Projects/installed/node_modules/yargs",
-    "realPath": "/Users/timoxley/Projects/installed/node_modules/yargs",
-    "parent": {
-      "name": "installed",
-      "version": "2.0.2",
-      "description": "Read all the installed packages in a folder, and produce an Array of all the data.",
-      "main": "installed.js",
-      "bin": "[Circular ~.0.parent.bin]",
-      "scripts": "[Circular ~.0.parent.scripts]",
-      "keywords": "[Circular ~.0.parent.keywords]",
-      "author": "[Circular ~.0.parent.author]",
-      "license": "MIT",
-      "devDependencies": "[Circular ~.0.parent.devDependencies]",
-      "dependencies": "[Circular ~.0.parent.dependencies]",
-      "repository": "[Circular ~.0.parent.repository]",
-      "bugs": "[Circular ~.0.parent.bugs]",
-      "homepage": "https://github.com/timoxley/installed",
-      "readme": "# installed\n\nRead all the installed packages in a folder, and produce an Array of all the data.\n\nA wrapper around npm's [read-installed](https://github.com/npm/read-installed) that\nproduces a flat array rather than a nested tree structure. Also adds a few bells and whistles.\n\nArrays are a *far* easier to process and reason about than nested objects.\n\n## Installation\n\n```\nnpm install --save installed\n```\n\n## Usage\n\n```js\nvar installed = require('installed')\n\n// default options\nvar options = {\n  dev: false,      // exclude all dev dependencies\n  depth: Infinity, // depth to traverse\n  extraneous: true // includes extraneous deps. Set to false to filter extraneous dependencies out.\n}\n\n// options is optional\ninstalled(process.cwd(), options, function(err, pkgs) {\n  if (err) throw err;\n  var pkgVersions = pkgs.map(function(dep) {\n    return dep.name + '@' + dep.version\n  })\n\n  console.log(pkgVersions.join('\\n'))\n})\n```\n\n## CLI\n\n```\n> installed --help\nGet a JSON dump of installed package data.\n\nUsage: installed [options]\n\nOptions:\n  --dev            Include development dependencies.\n  --extraneous     Show extraneous dependencies                                                                   [default: true]\n  --no-extraneous  Filter extraneous dependencies. This will include --dev dependencies if --dev is not enabled.\n  --depth          Traversal depth. use --depth=Infinity or --depth=-1 to traverse entire dependency tree.        [default: 0]\n  --color          Display coloured output. Auto-disabled if output is not a terminal.                            [default: true]\n  --no-color       Don't display coloured output, strictly JSON.\n  --json           Produce JSON output. Implies --no-color.\n  --help           Show help\n  --version        Show version number\n```\n\n## Data Structure Sample\n\nThe program below serializes the result of running `installed` in the\n`installed` directory. You can see the result of this output at [installed-sample.json](https://github.com/timoxley/installed/blob/master/installed-sample.json)\n\nNote you'll need to use something like [json-stringify-safe](https://github.com/isaacs/json-stringify-safe) in order to safely serialize the data produced by `installed`, as it contains circular references.\n\n```js\nvar stringify = require('json-stringify-safe');\nvar installed = require('installed')\nvar fs = require('fs')\n\ninstalled(process.cwd(), {depth: 0}, function(err, pkgs) {\n  if(err) throw err;\n  console.log(stringify(i, null, 2))\n})\n```\n\n## See Also\n\n* [pkgrep](http://github.com/timoxley/pkgrep)\n\n#### Note about versions < 2.0.0\n\n[pkgrep](http://github.com/timoxley/pkgrep) was  briefly known as `installed` so versions of `installed` <\n`2.0.0` are actually deprecated versions of `pkgrep`.\n\n# License\n\nMIT\n",
-      "readmeFilename": "Readme.md",
-      "gitHead": "863509e79ab5c0661fd3eb84023e08a3fe2de947",
-      "_id": "installed@2.0.2",
-      "realName": "installed",
-      "extraneous": false,
-      "path": "/Users/timoxley/Projects/installed",
-      "realPath": "/Users/timoxley/Projects/installed",
-      "depth": 0,
-      "peerDependencies": "[Circular ~.0.parent.peerDependencies]",
-      "root": true
-    },
+    "invalid": true,
+    "_npmVersion": "1.3.6",
+    "parent": "[Circular ~.0.parent]",
+    "_from": "json-stringify-safe@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+    "bugs": "[Circular ~.0.parent.dependencies.json-stringify-safe.bugs]",
+    "repository": "[Circular ~.0.parent.dependencies.json-stringify-safe.repository]",
+    "description": "Like JSON.stringify, but doesn't blow up on circular refs",
+    "author": "[Circular ~.0.parent.dependencies.json-stringify-safe.author]",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.json-stringify-safe.peerDependencies]",
+    "realName": "json-stringify-safe",
+    "_npmUser": "[Circular ~.0.parent.dependencies.json-stringify-safe._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.json-stringify-safe.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.json-stringify-safe.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.json-stringify-safe.scripts]",
+    "_id": "json-stringify-safe@5.0.0",
+    "license": "BSD",
+    "homepage": "https://github.com/isaacs/json-stringify-safe",
+    "maintainers": "[Circular ~.0.parent.dependencies.json-stringify-safe.maintainers]",
+    "name": "json-stringify-safe",
     "depth": 1,
-    "peerDependencies": {}
+    "main": "stringify.js",
+    "extraneous": false,
+    "readme": "ERROR: No README data found!",
+    "version": "5.0.0",
+    "path": "/Users/timoxley/Projects/installed/node_modules/json-stringify-safe",
+    "dependencies": "[Circular ~.0.parent.dependencies.json-stringify-safe.dependencies]",
+    "_resolved": "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.0.tgz",
+    "_shasum": "4c1f228b5050837eba9d21f50c2e6e320624566e",
+    "keywords": "[Circular ~.0.parent.dependencies.json-stringify-safe.keywords]"
+  },
+  {
+    "parent": "[Circular ~.0.parent]",
+    "_npmVersion": "3.3.12",
+    "_from": "babel-polyfill@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/babel-polyfill",
+    "repository": "[Circular ~.0.parent.dependencies.babel-polyfill.repository]",
+    "author": "[Circular ~.0.parent.dependencies.babel-polyfill.author]",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.babel-polyfill.peerDependencies]",
+    "realName": "babel-polyfill",
+    "_npmUser": "[Circular ~.0.parent.dependencies.babel-polyfill._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.babel-polyfill.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.babel-polyfill.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.babel-polyfill.scripts]",
+    "_id": "babel-polyfill@6.3.14",
+    "homepage": "https://babeljs.io/",
+    "license": "MIT",
+    "maintainers": "[Circular ~.0.parent.dependencies.babel-polyfill.maintainers]",
+    "name": "babel-polyfill",
+    "depth": 1,
+    "main": "lib/index.js",
+    "extraneous": true,
+    "readme": "ERROR: No README data found!",
+    "version": "6.3.14",
+    "path": "/Users/timoxley/Projects/installed/node_modules/babel-polyfill",
+    "_nodeVersion": "5.1.0",
+    "dependencies": "[Circular ~.0.parent.dependencies.babel-polyfill.dependencies]",
+    "_resolved": "https://registry.npmjs.org/babel-polyfill/-/babel-polyfill-6.3.14.tgz",
+    "_shasum": "1872298ede5b9f7b02ec7807bd3dd301c189c440"
+  },
+  {
+    "contributors": "[Circular ~.0.parent.dependencies.yargs.contributors]",
+    "parent": "[Circular ~.0.parent]",
+    "_npmVersion": "2.1.7",
+    "_from": "yargs@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/yargs",
+    "bugs": "[Circular ~.0.parent.dependencies.yargs.bugs]",
+    "repository": "[Circular ~.0.parent.dependencies.yargs.repository]",
+    "description": "Light-weight option parsing with an argv hash. No optstrings attached.",
+    "author": "[Circular ~.0.parent.dependencies.yargs.author]",
+    "gitHead": "e6807327c06dd6a311c63e124ff6a50e38b23804",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.yargs.peerDependencies]",
+    "realName": "yargs",
+    "_npmUser": "[Circular ~.0.parent.dependencies.yargs._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.yargs.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.yargs.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.yargs.scripts]",
+    "_id": "yargs@1.3.3",
+    "license": "MIT/X11",
+    "homepage": "https://github.com/chevex/yargs",
+    "maintainers": "[Circular ~.0.parent.dependencies.yargs.maintainers]",
+    "name": "yargs",
+    "depth": 1,
+    "devDependencies": "[Circular ~.0.parent.dependencies.yargs.devDependencies]",
+    "main": "./index.js",
+    "extraneous": true,
+    "readme": "ERROR: No README data found!",
+    "version": "1.3.3",
+    "path": "/Users/timoxley/Projects/installed/node_modules/yargs",
+    "_nodeVersion": "0.10.33",
+    "dependencies": "[Circular ~.0.parent.dependencies.yargs.dependencies]",
+    "_resolved": "https://registry.npmjs.org/yargs/-/yargs-1.3.3.tgz",
+    "_shasum": "054de8b61f22eefdb7207059eaef9d6b83fb931a",
+    "keywords": "[Circular ~.0.parent.dependencies.yargs.keywords]",
+    "engine": "[Circular ~.0.parent.dependencies.yargs.engine]"
+  },
+  {
+    "parent": "[Circular ~.0.parent]",
+    "_npmVersion": "2.6.0",
+    "_from": "flat@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/flat",
+    "bugs": "[Circular ~.0.parent.dependencies.flat.bugs]",
+    "repository": "[Circular ~.0.parent.dependencies.flat.repository]",
+    "description": "Take a nested Javascript object and flatten it, or unflatten an object with delimited keys",
+    "author": "[Circular ~.0.parent.dependencies.flat.author]",
+    "gitHead": "b573069344ad88a5e65ad88a5e58804649345c8f",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.flat.peerDependencies]",
+    "realName": "flat",
+    "_npmUser": "[Circular ~.0.parent.dependencies.flat._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.flat.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.flat.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.flat.scripts]",
+    "_id": "flat@1.5.1",
+    "license": "BSD",
+    "homepage": "https://github.com/hughsk/flat",
+    "maintainers": "[Circular ~.0.parent.dependencies.flat.maintainers]",
+    "name": "flat",
+    "depth": 1,
+    "devDependencies": "[Circular ~.0.parent.dependencies.flat.devDependencies]",
+    "main": "index.js",
+    "readmeFilename": "README.md",
+    "readme": "# flat [![Build Status](https://secure.travis-ci.org/hughsk/flat.png?branch=master)](http://travis-ci.org/hughsk/flat)\n\nTake a nested Javascript object and flatten it, or unflatten an object with\ndelimited keys.\n\n## Installation\n\n``` bash\n$ npm install flat\n```\n\n## Methods\n\n### flatten(original, options)\n\nFlattens the object - it'll return an object one level deep, regardless of how\nnested the original object was:\n\n``` javascript\nvar flatten = require('flat')\n\nflatten({\n    key1: {\n        keyA: 'valueI'\n    },\n    key2: {\n        keyB: 'valueII'\n    },\n    key3: { a: { b: { c: 2 } } }\n})\n\n// {\n//   'key1.keyA': 'valueI',\n//   'key2.keyB': 'valueII',\n//   'key3.a.b.c': 2\n// }\n```\n\n### unflatten(original, options)\n\nFlattening is reversible too, you can call `flatten.unflatten()` on an object:\n\n``` javascript\nvar unflatten = require('flat').unflatten\n\nunflatten({\n    'three.levels.deep': 42,\n    'three.levels': {\n        nested: true\n    }\n})\n\n// {\n//     three: {\n//         levels: {\n//             deep: 42,\n//             nested: true\n//         }\n//     }\n// }\n```\n\n## Options\n\n### delimiter\n\nUse a custom delimiter for (un)flattening your objects, instead of `.`.\n\n### safe\n\nWhen enabled, both `flat` and `unflatten` will preserve arrays and their\ncontents. This is disabled by default.\n\n``` javascript\nvar flatten = require('flat')\n\nflatten({\n    this: [\n        { contains: 'arrays' },\n        { preserving: {\n              them: 'for you'\n        }}\n    ]\n}, {\n    safe: true\n})\n\n// {\n//     'this': [\n//         { contains: 'arrays' },\n//         { preserving: {\n//             them: 'for you'\n//         }}\n//     ]\n// }\n```\n\n### object\n\nWhen enabled, arrays will not be created automatically when using calling\nunflatten, like so:\n\n``` javascript\nunflatten({\n    'hello.you.0': 'ipsum',\n    'hello.you.1': 'lorem',\n    'hello.other.world': 'foo'\n}, { object: true })\n\n// hello: {\n//     you: {\n//         0: 'ipsum',\n//         1: 'lorem',\n//     },\n//     other: { world: 'foo' }\n// }\n```\n\n### overwrite\n\nWhen enabled, existing keys in the unflattened object may be overwritten if they cannot hold a newly encountered nested value:\n\n```javascript\nunflatten({\n    'TRAVIS': 'true',\n    'TRAVIS_DIR': '/home/travis/build/kvz/environmental'\n}, { overwrite: true })\n\n// TRAVIS: {\n//     DIR: '/home/travis/build/kvz/environmental'\n// }\n```\n\nWithout `overwrite` set to `true`, the `TRAVIS` key would already have been set to a string, thus could not accept the nested `DIR` element.\n\nThis only makes sense on ordered arrays, and since we're overwriting data, should be used with care.\n\n",
+    "version": "1.5.1",
+    "path": "/Users/timoxley/Projects/installed/node_modules/flat",
+    "_nodeVersion": "0.10.36",
+    "dependencies": "[Circular ~.0.parent.dependencies.flat.dependencies]",
+    "_resolved": "https://registry.npmjs.org/flat/-/flat-1.5.1.tgz",
+    "extraneous": true,
+    "_shasum": "a2905a886d6f5551c58d0d745b562a38b843c062",
+    "keywords": "[Circular ~.0.parent.dependencies.flat.keywords]"
+  },
+  {
+    "parent": "[Circular ~.0.parent]",
+    "_npmVersion": "2.5.0",
+    "_from": "split-object@*",
+    "realPath": "/Users/timoxley/Projects/installed/node_modules/split-object",
+    "bugs": "[Circular ~.0.parent.dependencies.split-object.bugs]",
+    "repository": "[Circular ~.0.parent.dependencies.split-object.repository]",
+    "description": "Work with Objects using built-in functional Array methods",
+    "author": "[Circular ~.0.parent.dependencies.split-object.author]",
+    "gitHead": "11b50cb0ee5fdebddda40c7c8a68f600f1238237",
+    "peerDependencies": "[Circular ~.0.parent.dependencies.split-object.peerDependencies]",
+    "realName": "split-object",
+    "_npmUser": "[Circular ~.0.parent.dependencies.split-object._npmUser]",
+    "dist": "[Circular ~.0.parent.dependencies.split-object.dist]",
+    "directories": "[Circular ~.0.parent.dependencies.split-object.directories]",
+    "scripts": "[Circular ~.0.parent.dependencies.split-object.scripts]",
+    "_id": "split-object@2.1.0",
+    "license": "MIT",
+    "homepage": "https://github.com/timoxley/split-object",
+    "maintainers": "[Circular ~.0.parent.dependencies.split-object.maintainers]",
+    "name": "split-object",
+    "depth": 1,
+    "devDependencies": "[Circular ~.0.parent.dependencies.split-object.devDependencies]",
+    "main": "index.js",
+    "readmeFilename": "Readme.md",
+    "readme": "# split-object\n\nMinimal tool for working with Objects using built-in functional Array\nmethods.\n\n`split-object` will split an Object into an Array of keys & values,\nallowing you to manipulate the Object using Array methods then join\nvalues back into an Object.\n\nIn comparison to `for..in` or `Object.keys().forEach()` an Array of the\nform `[{key1: value1}, {key2: value2}]` can be a far more natural &\nconvenient structure to work with.\n\n`split-object` has both a `split` and a `join` method, similar to how\n`String#split`/`Array#join` combine to convert back & forward between\nStrings & Arrays.\n\n[Post ES6](https://esdiscuss.org/topic/es6-iteration-over-object-values) we\nmight see some better methods for iterating over Objects.\n\n## Installation\n\n```\nnpm install split-object\n```\n\n## Usage\n\n```js\nvar salad = {\n  apples: 1,\n  bananas: 3,\n  carrots: 2\n}\n\n// transform each key/value using Array.prototype.map\nvar loudIngredients = split(salad).map(function(ingredient) {\n  ingredient.key = ingredient.key.toUpperCase()\n  ingredient.value *= 3\n  return ingredient\n})\n\n// loudIngredients:\n// [\n//   { key: 'APPLES', value: 3 },\n//   { key: 'BANANAS', value: 9 },\n//   { key: 'CARROTS', value: 6 }\n// ]\n\nvar loudSalad = split.join(loudIngredients)\n\n// loudSalad:\n// {\n//    APPLES: 3,\n//    BANANAS: 9,\n//    CARROTS: 6\n// }\n//\n```\n\n## Examples\n\n### Iterating Keys & Values\n\n```js\n// with object-split\nsplit(salad).forEach(function(item) {\n  console.log(item.key, item.value)\n})\n```\n\n```js\n// without object-split\nObject.keys(salad).forEach(function(key) {\n  var value = salad[key]\n  console.log(key, value)\n})\n\n// or\nfor (var key in salad) {\n  var value = salad[key]\n  console.log(key, value)\n}\n```\n\n### Chaining Transformations\n\n```js\n// with object-split\nvar pieces = split(salad)\n.map(function(kv) {\n  kv.value = calculate(kv.value)\n  return kv\n})\n.map(function(kv) {\n  kv.value = recalculate(kv.value)\n  return kv\n})\nvar newSalad = split.join(pieces)\n```\n\nWithout splitting the Object into a similar structure to `split-object`, you're\nstuck with losing the keys (which is acceptable if you can deduce keys from the\nvalue) or using multiple `reduce` calls/`for..of` iteration:\n\n```js\n// without object-split\nvar newSalad = Object.keys(salad)\n.reduce(function(obj, key) {\n  var value = salad[key]\n  obj[key] = calculate(value)\n  return obj\n}, {})\nnewSalad = Object.keys(newSalad)\n.reduce(function(obj, key) {\n  var value = newSalad[key]\n  obj[key] = recalculate(value)\n  return obj\n}, {})\n```\n\n`split-object` doesn't save a huge number of lines, but it\nsaves some complexity, enables easier chaining and removes the hassle\nof extracting the value from the object on each iteration.\n\n## Custom Key/Value Names\n\nTo provide more semantic key/value names, supply a second argument to\neither `split` or `join` with the key/value mapping:\n```js\nvar salad = {\n  apples: 1,\n  bananas: 3,\n  carrots: 2\n}\n\nvar loudIngredients = split(salad, {key: 'name', value: 'amount'}).map(function(ingredient) {\n  ingredient.name = ingredient.name.toUpperCase()\n  ingredient.amount *= 3\n  return ingredient\n})\n\n// loudIngredients:\n// [\n//   { name: 'APPLES', amount: 3 },\n//   { name: 'BANANAS', amount: 9 },\n//   { name: 'CARROTS', amount: 6 }\n// ]\n\nvar loudSalad = split.join(loudIngredients, {key: 'name', value: 'amount'})\n\n// loudSalad:\n// {\n//    APPLES: 3,\n//    BANANAS: 9,\n//    CARROTS: 6\n// }\n//\n\n```\n\nThis also means you can use `join` to create an Object out of any Array\nof Objects with two properties.\n\nRemember to also supply the mapping to join otherwise it won't be able to find the correct key/value pair to re-form the object.\n\n## See Also\n\n* [hughsk/flat](https://github.com/hughsk/flat) – Flatten/unflatten nested Javascript objects (Highly recommended for use with `split-object`).\n\n## License\n\nMIT\n",
+    "version": "2.1.0",
+    "path": "/Users/timoxley/Projects/installed/node_modules/split-object",
+    "_nodeVersion": "0.10.36",
+    "dependencies": "[Circular ~.0.parent.dependencies.split-object.dependencies]",
+    "_resolved": "https://registry.npmjs.org/split-object/-/split-object-2.1.0.tgz",
+    "extraneous": true,
+    "_shasum": "5116c03eef7cd4b104ffac34eed4549c5d97d443",
+    "keywords": "[Circular ~.0.parent.dependencies.split-object.keywords]"
   }
 ]
